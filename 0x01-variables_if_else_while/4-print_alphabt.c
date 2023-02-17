@@ -1,4 +1,3 @@
-#!/bin/bash
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
@@ -14,10 +13,12 @@ int main(void)
 
     for (letter = 'a'; letter <= 'z'; letter++)
     {
-        if(letter == 'a' || letter == 'e') continue;
+        if (letter == 'a' || letter == 'e')
+            continue;
         putchar(letter);
         putchar('\n');
     }
 
     return (0);
 }
+

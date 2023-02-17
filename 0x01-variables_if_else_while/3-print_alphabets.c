@@ -1,4 +1,3 @@
-#!/bin/bash
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
@@ -11,11 +10,10 @@
 int main(void)
 {
     char letter;
-
     for (letter = 'a'; letter <= 'z'; letter++)
     {
         putchar(letter);
-        putchar(letter - 32); 
+        putchar(letter - 32);
         putchar('\n');
     }
 
