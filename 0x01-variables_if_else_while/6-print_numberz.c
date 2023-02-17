@@ -13,7 +13,9 @@ int i;
 for (i = 0; i < 10; i++)
 {
 	int digit = i + '0';
+
 	putchar(digit);
+
 }
 putchar('\n');
 return (0);
