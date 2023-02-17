@@ -13,8 +13,11 @@ int main(void)
 
     for (i = 0; i < 10; i++)
     {
-        printf("%d\n", i);
+        int digit = i + '0'; // convert the integer to its ASCII character representation
+        putchar(digit);
+        putchar('\n');
     }
 
     return 0;
 }
+
