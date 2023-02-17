@@ -10,22 +10,19 @@
 
 int main(void)
 {
-int i;
+	int i;
 
-for (i = 0; i < 10; i++)
-{
-int j;
-for (j = i; j < 10; j++)
-{
-putchar(i + '0');
-putchar(j + '0');
-if (i != 9 || j != 9)
-{
-putchar(',');
-putchar(' ');
-}
-}
+	for (i = 0; i < 10; i++)
+	{
+		putchar(i + '0');
+		if (i < 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
+
+	return (0);
 }
 
-return (0);
-}
